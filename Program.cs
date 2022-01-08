@@ -12,6 +12,13 @@ namespace AddressBookUser
             Console.WriteLine("welcome to Address Book for User");
             AddressBookMain.Add();
             AddressBookMain.ContactsDisplay();
+            Console.WriteLine("before edit ----------------------------------------------------------------------");
+            EditContact.Editcontact();
+            Console.WriteLine("After edit");
+            Console.WriteLine("-------------------------------------------------------------------------------");
+            AddressBookMain.ContactsDisplay();
+
+
         }
     }
 }
