@@ -12,6 +12,7 @@ namespace AddressBookUser
             Console.WriteLine("welcome to Address Book for User");
             AddressBookMain.Add();
             AddressBookMain.ContactsDisplay();
+            DeleteContact.deleteContact();
         }
     }
 }
