@@ -19,7 +19,9 @@ namespace AddressBookUser
                   "\n choose 6 for search Person" +
                   "\n choose 7 for count person by city and state " +
                   "\n choose 8 for Sort Person By firstname"+
-                  "\n Press 9 to exit ");
+                  "\n choose 9 for sort person by city"+
+                  "\n choose 10 for Csv File Handling"+
+                  "\n Press 11 to exit ");
                   
             int option =Convert.ToInt32( Console.ReadLine());
 
@@ -105,6 +107,16 @@ namespace AddressBookUser
                         break;
                     }
                 case 9:
+                    {
+                        SortByCity.SortBycity();
+                        break;
+                    }
+                case 10:
+                    {
+                        CsvFile.CsvHandle();
+                        break;
+                    }
+                case 11:
                     {
                         AddressBookMain.ExitProgram();
                         break;
