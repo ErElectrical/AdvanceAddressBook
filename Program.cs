@@ -21,7 +21,8 @@ namespace AddressBookUser
                   "\n choose 8 for Sort Person By firstname"+
                   "\n choose 9 for sort person by city"+
                   "\n choose 10 for Csv File Handling"+
-                  "\n Press 11 to exit ");
+                  "\n choose 11 for Json File Handling"+
+                  "\n Press 12 to exit ");
                   
             int option =Convert.ToInt32( Console.ReadLine());
 
@@ -117,6 +118,11 @@ namespace AddressBookUser
                         break;
                     }
                 case 11:
+                    {
+                        jsonFileHadling.JsonReadwrite();
+                        break;
+                    }
+                case 12:
                     {
                         AddressBookMain.ExitProgram();
                         break;
