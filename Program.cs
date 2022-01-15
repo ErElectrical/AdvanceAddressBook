@@ -44,7 +44,40 @@ namespace AddressBookUser
                 case 4:
                     {
                         RefactorToAddMultipleAddressBook.addAddressBook();
-                        RefactorToAddMultipleAddressBook.ContactsDisplay();
+                        Console.WriteLine("choose option that you want to do with multiple addressBook");
+                        Console.WriteLine("1. AddContact" +
+                            "\n 2. ContactDisplay" +
+                            "\n 3. EditContact" +
+                            "\n 4. DeleteContact" );
+                        int x = Convert.ToInt32(Console.ReadLine());
+                        switch(x)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine("enter addressBook Name");
+                                    string address = Console.ReadLine();
+                                    RefactorToAddMultipleAddressBook.AddContact(address);
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    RefactorToAddMultipleAddressBook.ContactsDisplay();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    RefactorToAddMultipleAddressBook.EditContact();
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    RefactorToAddMultipleAddressBook.DeleteContact();
+                                    break;
+                                }
+
+                        }
+                            
+                        
                         break;
                     }
                 case 5:
