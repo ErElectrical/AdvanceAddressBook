@@ -9,7 +9,9 @@ namespace AddressBookUser
 
         static void Main(string[] args)
         {
+
             Console.WriteLine("welcome to Address Book for User");
+            start:
             Console.WriteLine("choose the option you want to do with addressBook" +
                 "\n choose 1 for Add contact" +
                   "\n choose 2 for Edit contact" +
@@ -124,12 +126,28 @@ namespace AddressBookUser
                     }
                 case 12:
                     {
+                        
                         AddressBookMain.ExitProgram();
                         break;
                     }
                 default:
                     {
                         Console.WriteLine("Dont try to play with developer ");
+                        break;
+                    }
+            }
+            Console.WriteLine("Do you want to use addressBook Again --- Yes,No");
+            string opt = Console.ReadLine();
+            switch(opt)
+            {
+                case "Yes":
+                    goto start;
+                case "No":
+                    Console.WriteLine("thankyou to use address Book User");
+                    break;
+                default:
+                    {
+                        Console.WriteLine("Thanks for using ");
                         break;
                     }
             }
